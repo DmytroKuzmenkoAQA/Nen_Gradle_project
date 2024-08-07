@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SingletonDriver {
     private static SingletonDriver INSTANCE;
-    private WebDriver driver;
+    private final WebDriver driver;
     private SingletonDriver() {
         driver = new ChromeDriver();
     }
